@@ -1,0 +1,21 @@
+body{
+margin: 0 auto;
+text-align: center;
+font-size: 50px;
+color: red;
+}
+
+a {
+text-align: center;
+font-size: 30px;
+}
+
+form{
+text-align: center;
+font-size: 30px;
+}
+
+p{
+text-align: center;
+font-size: 30px;
+}

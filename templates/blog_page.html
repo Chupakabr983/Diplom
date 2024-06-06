@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+</head>
+<body>
+    <form action="blog_page" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div> {{ field.label_tag }} {{field}}</div>
+        {% endfor %}
+<!--        {{ form }}-->
+        <p><input type="submit"></p>
+    </form>
+</body>
+</html>
